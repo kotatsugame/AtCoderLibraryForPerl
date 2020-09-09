@@ -8,14 +8,18 @@ sub add_edge{
 }
 sub scc{
 	my$self=shift;
-	my$now_ord=0,$group_num=0,@low,@ord=(-1)x@{$self},@ids;
+	my$now_ord=0;
+	my$group_num=0;
+	my@low;
+	my@ord=(-1)x@{$self};
+	my@ids;
 	my@visited;
 	my$dfs;
 	$dfs=sub{
 		my$v=shift;
 		$low[$v]=$ord[$v]=$now_ord++;
 		push@visited,$v;
-		for$to(@{$self->[$v]}){
+		for my$to(@{$self->[$v]}){
 			if($ord[$to]==-1){
 				$dfs->($to);
 				$low[$v]=$low[$to]if$low[$v]>$low[$to];
@@ -34,12 +38,12 @@ sub scc{
 			$group_num++;
 		}
 	};
-	for$i(0..$#ord){
+	for my$i(0..$#ord){
 		$dfs->($i)if$ord[$i]==-1;
 	}
 	$_=$group_num-1-$_ for@ids;
 	my@groups=map[],1..$group_num;
-	for$i(0..$#ids){
+	for my$i(0..$#ids){
 		push@{$groups[$ids[$i]]},$i;
 	}
 	return\@groups;

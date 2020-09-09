@@ -1,3 +1,5 @@
+use strict;
+use warnings;
 package FenwickTree;
 sub new{
 	return bless[(0)x$_[1]],$_[0];
@@ -29,7 +31,7 @@ package main;
 my($N,$Q)=split$",<>;
 my$fenwicktree=FenwickTree->new($N);
 my@a=split$",<>;
-for$i(0..$#a){
+for my$i(0..$#a){
 	$fenwicktree->add($i,$a[$i]);
 }
 for(1..$Q){
