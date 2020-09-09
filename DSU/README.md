@@ -12,14 +12,10 @@
 ## コンストラクタ
 
 ```perl
-my$dsu=dsu->new($N)
+my$dsu=dsu->new($n)
 ```
 
-* $N頂点0辺の無向グラフを作ります。
-
-#### 計算量
-
-* O(n)
+* n頂点0辺の無向グラフを作ります。
 
 ## merge
 
@@ -27,4 +23,37 @@ my$dsu=dsu->new($N)
 $dsu->merge($a,$b)
 ```
 
-辺($a,$b)
+## same
+
+```perl
+$dsu->same($a,$b)
+```
+
+## leader
+
+```perl
+$dsu->leader($a)
+```
+
+## size
+
+```perl
+$dsu->size($a)
+```
+
+## groups
+
+未実装です。
+
+# 使用例
+
+## merge,same,leader
+
+[AtCoder Library Practice Contest A - Disjoint Set Union](https://atcoder.jp/contests/practice2/submissions/16601739)
+
+`test1.pl`です。
+
+## size,groups
+
+なし(未verify)
+

@@ -27,3 +27,15 @@ sub size{
 sub groups{
 	#TODO
 }
+package main;
+my($N,$Q)=split$",<>;
+my$dsu=dsu->new($N);
+for(1..$Q){
+	my($t,$u,$v)=split$",<>;
+	if($t==0){
+		$dsu->merge($u,$v);
+	}
+	else{
+		print $dsu->same($u,$v)?1:0,$/;
+	}
+}
