@@ -1,6 +1,6 @@
 # 2-SAT
 
-Sccを継承します。useを書いていないので、同じファイル内にscc.plの内容をコピペしてください。
+Sccを継承します。useを書いていないので、同じファイル内に[scc.pl](https://github.com/kotatsugame/AtCoderLibraryForPerl/blob/master/SCC/scc.pl)の内容をコピペしてください。
 
 ## コンストラクタ
 
