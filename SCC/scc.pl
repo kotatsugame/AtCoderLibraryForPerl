@@ -1,4 +1,4 @@
-package scc;
+package Scc;
 sub new{
 	return bless[map[],1..$_[1]],$_[0];
 }

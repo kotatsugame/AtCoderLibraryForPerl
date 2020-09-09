@@ -1,4 +1,4 @@
-package scc;
+package Scc;
 sub new{
 	return bless[map[],1..$_[1]],$_[0];
 }
@@ -46,7 +46,7 @@ sub scc{
 }
 package main;
 my($N,$M)=split$",<>;
-my$scc=scc->new($N);
+my$scc=Scc->new($N);
 for(1..$M){
 	my($a,$b)=split$",<>;
 	$scc->add_edge($a,$b);

@@ -1,4 +1,4 @@
-package dsu;
+package Dsu;
 sub new{
 	return bless[(-1)x$_[1]],$_[0];
 }

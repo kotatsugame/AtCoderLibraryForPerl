@@ -1,4 +1,4 @@
-package dsu;
+package Dsu;
 sub new{
 	return bless[(-1)x$_[1]],$_[0];
 }
@@ -29,7 +29,7 @@ sub groups{
 }
 package main;
 my($N,$Q)=split$",<>;
-my$dsu=dsu->new($N);
+my$dsu=Dsu->new($N);
 for(1..$Q){
 	my($t,$u,$v)=split$",<>;
 	if($t==0){

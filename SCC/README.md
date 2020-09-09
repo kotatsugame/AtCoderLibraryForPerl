@@ -36,7 +36,7 @@ scc内部でdfs関数を定義しているが、無名関数のリファレン�
 
 ## add_edge,scc
 
-[AtCoder Library Practice Contest G - SCC](https://atcoder.jp/contests/practice2/submissions/16602600)
+[AtCoder Library Practice Contest G - SCC](https://atcoder.jp/contests/practice2/submissions/16603017)
 
 `test.pl`です。
 
