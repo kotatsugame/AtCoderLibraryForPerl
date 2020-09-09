@@ -3,7 +3,7 @@
 ## コンストラクタ
 
 ```perl
-my$scc=scc->new($n)
+my$scc=Scc->new($n)
 ```
 
 * n頂点0辺の有向グラフを作ります。

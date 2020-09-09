@@ -3,7 +3,7 @@
 ## コンストラクタ
 
 ```perl
-my$dsu=dsu->new($n)
+my$dsu=Dsu->new($n)
 ```
 
 * n頂点0辺の無向グラフを作ります。
