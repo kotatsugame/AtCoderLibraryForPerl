@@ -40,13 +40,13 @@ sub scc{
 			$group_num++;
 		}
 	};
-	for my$i(0..$#ord){
-		$dfs->($i)if$ord[$i]==-1;
+	for(0..$#ord){
+		$dfs->($_)if$ord[$_]==-1;
 	}
 	$_=$group_num-1-$_ for@ids;
 	my@groups=map[],1..$group_num;
-	for my$i(0..$#ids){
-		push@{$groups[$ids[$i]]},$i;
+	for(0..$#ids){
+		push@{$groups[$ids[$_]]},$_;
 	}
 	return\@groups;
 }
@@ -59,6 +59,6 @@ for(1..$M){
 }
 my$groups=$scc->scc();
 print scalar(@{$groups}),$/;
-for my$L(@{$groups}){
-	print scalar(@{$L}),$","@{$L}",$/;
+for(@{$groups}){
+	print scalar(@{$_}),$","@{$_}",$/;
 }
