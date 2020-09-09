@@ -31,8 +31,8 @@ package main;
 my($N,$Q)=split$",<>;
 my$fenwicktree=FenwickTree->new($N);
 my@a=split$",<>;
-for my$i(0..$#a){
-	$fenwicktree->add($i,$a[$i]);
+for(0..$#a){
+	$fenwicktree->add($_,$a[$_]);
 }
 for(1..$Q){
 	my($t,$a,$b)=split$",<>;
