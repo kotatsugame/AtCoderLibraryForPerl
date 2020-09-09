@@ -14,6 +14,16 @@ my$scc=Scc->new($n)
 $scc->add_edge($from,$to)
 ```
 
+## scc_ids
+
+```perl
+$scc->scc_ids()
+```
+
+本家のinternal_sccにある内部実装です。強連結成分の個数と、各ノードが属する強連結成分の番号のリストのリファレンスを組にして返します。強連結成分の番号はトポロジカル順序で振られています。
+
+TwoSatの実装でも使用されるため、下のscc()と分けています。
+
 ## scc
 
 ```perl
@@ -36,7 +46,7 @@ scc内部でdfs関数を定義しているが、無名関数のリファレン�
 
 ## add_edge,scc
 
-[AtCoder Library Practice Contest G - SCC](https://atcoder.jp/contests/practice2/submissions/16603393)
+[AtCoder Library Practice Contest G - SCC](https://atcoder.jp/contests/practice2/submissions/16603426)
 
 `test.pl`です。
 

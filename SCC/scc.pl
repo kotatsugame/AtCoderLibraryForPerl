@@ -6,7 +6,7 @@ sub add_edge{
 	my$self=shift;
 	push@{$self->[$_[0]]},$_[1];
 }
-sub scc{
+sub scc_ids{
 	my$self=shift;
 	my$now_ord=0;
 	my$group_num=0;
@@ -42,9 +42,14 @@ sub scc{
 		$dfs->($_)if$ord[$_]==-1;
 	}
 	$_=$group_num-1-$_ for@ids;
+	return($group_num,\@ids);
+}
+sub scc{
+	my$self=shift;
+	my($group_num,$ids)=$self->scc_ids();
 	my@groups=map[],1..$group_num;
-	for(0..$#ids){
-		push@{$groups[$ids[$_]]},$_;
+	for(0..$#{$ids}){
+		push@{$groups[$ids->[$_]]},$_;
 	}
 	return\@groups;
 }
