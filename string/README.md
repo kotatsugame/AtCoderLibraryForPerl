@@ -12,6 +12,8 @@ ZAlgorithm::z_algorithm(@s)
 
 # 使用例
 
+## z_algorithm
+
 * [AtCoder Beginner Contest 135 F - Strings of Eternity](https://atcoder.jp/contests/abc135/submissions/16614898)
 
 `test1.pl`です。

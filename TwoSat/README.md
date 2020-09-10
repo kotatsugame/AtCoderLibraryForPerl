@@ -32,7 +32,9 @@ $twosat->satisfiable()
 
 # 使用例
 
-[AtCoder Library Practice Contest H - Two SAT](https://atcoder.jp/contests/practice2/submissions/16603538)
+## add_clause,satisfiable
+
+* [AtCoder Library Practice Contest H - Two SAT](https://atcoder.jp/contests/practice2/submissions/16603538)
 
 `test.pl`です。
 

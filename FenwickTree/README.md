@@ -36,7 +36,7 @@ $fenwicktree->prefixsum($r)
 
 ## add,sum,prefixsum
 
-[AtCoder Library Practice Contest B - Fenwick Tree](https://atcoder.jp/contests/practice2/submissions/16603403)
+* [AtCoder Library Practice Contest B - Fenwick Tree](https://atcoder.jp/contests/practice2/submissions/16603403)
 
 `test.pl`です。
 

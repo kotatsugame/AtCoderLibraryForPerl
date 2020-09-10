@@ -40,7 +40,7 @@ $dsu->size($a)
 
 ## merge,same,leader
 
-[AtCoder Library Practice Contest A - Disjoint Set Union](https://atcoder.jp/contests/practice2/submissions/16603064)
+* [AtCoder Library Practice Contest A - Disjoint Set Union](https://atcoder.jp/contests/practice2/submissions/16603064)
 
 `test1.pl`です。
 
