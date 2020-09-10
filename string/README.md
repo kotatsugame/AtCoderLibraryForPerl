@@ -2,7 +2,7 @@
 
 ## z_algorithm
 
-```perl
+```pl
 ZAlgorithm::z_algorithm(@s)
 ```
 
