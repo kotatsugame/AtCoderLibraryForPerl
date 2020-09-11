@@ -1,3 +1,5 @@
+use strict;
+use warnings;
 package ModInt;
 sub MOD(){10**9+7}
 use overload
@@ -74,3 +76,22 @@ sub modinv{
 	}
 	return$r;
 }
+package main;
+my$a=ModInt->new(2);
+$\=$/;
+print"\$a = ",$a;
+print"-\$a = ",-$a;
+print"";
+print"\$a++ = ",$a++," changes to ",$a;
+print"\$a-- = ",$a--," changes to ",$a;
+print"++\$a = ",++$a;
+print"--\$a = ",--$a;
+print"";
+print"\$a + 10**10 = ",$a+10**10;
+print"\$a - 10**10 = ",$a-(10**10);
+print"\$a * 10**10 = ",$a*10**10;
+print"\$a / 10**10 = ",$a/10**10;
+print"(\$a / 10**10 * 10**10 = ",($a/10**10)*10**10,")";
+print"";
+print"\$a == 10**9+7+2 = ",$a==10**9+7+2;
+print"\$a != 10**9+7+5 = ",$a!=10**9+7+5;

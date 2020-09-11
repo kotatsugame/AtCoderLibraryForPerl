@@ -1,5 +1,18 @@
 # ModInt
 
+## MOD
+
+```perl
+sub MOD(){10**9+7}
+```
+
+最適化がかかってインライン展開されます。
+
+[perlsub - perldoc#Constant Functions](https://perldoc.perl.org/5.32.0/perlsub.html#Constant-Functions)
+
+この値を書き換えればMODの値を変更できます。
+また、外で定義した変数の値を返すようにすれば、実行時MODにも対応できます。この場合インライン展開は行われません。
+
 ## コンストラクタ
 
 ```perl
@@ -57,7 +70,7 @@ ModInt::invmod($a)
 
 # 使用例
 
-びっくりするほど遅いので何か問題を解くのは諦めました。ほとんどテストしていません。
+* サンプルコード
 
 ```perl
 use strict;
@@ -84,3 +97,10 @@ print"";
 print"\$a == 10**9+7+2 = ",$a==10**9+7+2;
 print"\$a != 10**9+7+5 = ",$a!=10**9+7+5;
 ```
+
+`test1.pl`です。
+
+* [AtCoder Beginner Contest 177 C - Sum of Product of pairs](https://atcoder.jp/contests/abc177/submissions/16627184)
+
+`test2.pl`です。
+

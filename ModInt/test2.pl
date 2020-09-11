@@ -1,3 +1,5 @@
+use strict;
+use warnings;
 package ModInt;
 sub MOD(){10**9+7}
 use overload
@@ -74,3 +76,12 @@ sub modinv{
 	}
 	return$r;
 }
+package main;
+<>;
+my$ans=ModInt->new(0);
+my$cumsum=ModInt->new(0);
+for(split$",<>){
+	$ans+=$cumsum*$_;
+	$cumsum+=$_;
+}
+print$ans,$/;
