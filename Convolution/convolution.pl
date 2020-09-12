@@ -28,7 +28,7 @@ my(@es,@ies,@sum_e,@sum_ie);
 	}
 	my$now=1;
 	my$inow=1;
-	for(0..$cnt2-3){
+	for(0..$cnt2-2){
 		$sum_e[$_]=$es[$_]*$now%MOD;
 		$now=$now*$ies[$_]%MOD;
 		$sum_ie[$_]=$ies[$_]*$inow%MOD;
